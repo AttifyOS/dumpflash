@@ -1,0 +1,9 @@
+[package_detail]
+name = "dumpflash"
+description = "Low-level NAND Flash dump and parsing utility"
+version = "0.0.1"
+source_url = "https://github.com/ohjeongwook/dumpflash"
+license = "MIT"
+install_script = "setup.sh"
+install_script_type = "shell"
+

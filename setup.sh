@@ -35,7 +35,7 @@ install() {
   wget https://github.com/ohjeongwook/dumpflash/archive/fc0c3e13909c9f08e8a4ad90a5a7e0bc02ae1544.tar.gz -O $APM_TMP_DIR/dumpflash.tar.gz
   tar xf $APM_TMP_DIR/dumpflash.tar.gz -C $APM_PKG_INSTALL_DIR
   rm $APM_TMP_DIR/dumpflash.tar.gz
-  mv $APM_PKG_INSTALL_DIR/dumpflash-fc0c3e13909c9f08e8a4ad90a5a7e0bc02ae1544 mv $APM_PKG_INSTALL_DIR/dumpflash
+  mv $APM_PKG_INSTALL_DIR/dumpflash-fc0c3e13909c9f08e8a4ad90a5a7e0bc02ae1544 $APM_PKG_INSTALL_DIR/dumpflash
   
   $APM_PKG_INSTALL_DIR/python/bin/pip3.9 install pyftdi pyusb libusb1
 

@@ -42,8 +42,7 @@ install() {
   for tool in dumpflash dumpjffs2
   do
     echo '#!/usr/bin/env sh' > $APM_PKG_BIN_DIR/$tool
-    echo -ne "$APM_PKG_INSTALL_DIR/python/bin/python3.9 $APM_PKG_INSTALL_DIR/dumpflash/dumpflash/$tool.py " >> $APM_PKG_BIN_DIR/$tool
-    echo '"$@"' >> $APM_PKG_BIN_DIR/$tool
+    echo "$APM_PKG_INSTALL_DIR/python/bin/python3.9 $APM_PKG_INSTALL_DIR/dumpflash/dumpflash/$tool.py \"\$@\"" >> $APM_PKG_BIN_DIR/$tool
     chmod +x $APM_PKG_BIN_DIR/$tool
   done
 
